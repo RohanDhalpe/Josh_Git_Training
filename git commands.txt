@@ -1,0 +1,159 @@
+   1  git status
+    2  git log
+    3  git push origin master -u https://github.com/RohanDhalpe/PortFolio.git
+    4  git remote add origin https://github.com/RohanDhalpe/PortFolio.git
+    5  git push origin main
+    6  git push origin main
+    7  cd cd re
+    8  cd desktop
+    9  cd react-portfolio
+   10  git status
+   11  git add .
+   12  git commit -m 'my first portfolio'
+   13  cd C
+   14  cd c:\Reactjs
+   15  cd counter-app
+   16   git status
+   17  git init
+   18  git status
+   19  clear
+   20  git add .
+   21  git config --global core.autocrlf true
+   22  dos2unix file1 file2 ...
+   23  git init
+   24  git init
+   25  ls -a
+   26  mkdir company
+   27  cd company
+   28  nano company
+   29  cat company.txt
+   30  cat company
+   31  git status
+   32  git add .
+   33  git commit -m "company commit"
+   34  git branch -b college
+   35  git checkout -b "company data"
+   36  git checkout -b "company_data"
+   37  mkdir interns
+   38  nano interns
+   39  git status
+   40  cat company_data
+   41  git checkout -b "college"
+   42  mkdir college_data
+   43  nano college_data
+   44  touch college_data
+   45  nano college_data
+   46  git commit -m "second commit"
+   47  git status
+   48  git add .
+   49  git status
+   50  git branch
+   51  git stash
+   52  git log
+   53  git stash list
+   54  git status
+   55  git checkout -B master
+   56  git log
+   57  git stash list
+   58  git status
+   59  git stash pop
+   60  git status
+   61  git stash company_data
+   62  git branch
+   63  git checkout -b college
+   64  git checkout -B college
+   65  git branch
+   66  git stash
+   67  git stash list
+   68  git checkout -B company_data
+   69  git branch
+   70  git status
+   71  git pop
+   72  git stash pop
+   73  git status
+   74  git commit "new commit"
+   75  git commit -m "new commit"
+   76  git status
+   77  git log
+   78  git checkout -B master
+   79  git status
+   80  git log
+   81  git config --list
+   82  git remote add origin git@github.com:RohanDhalpe/Josh_git.git
+   83  git push origin master
+   84  git status
+   85  git show
+   86  git push origin company
+   87  git branch
+   88  git push origin company_data
+   89  git push origin college
+   90  git show
+   91  git merge
+   92  git merge origin
+   93  git merge master
+   94  git show
+   95  git add .
+   96  git commit -m "another commit"
+   97  git push -u origin master
+   98  clr
+   99  git status
+  100  git checkout -B company_data
+  101  nano company_data
+  102  git status
+  103  git add .
+  104  git commit -m "Second Commit"
+  105  git reset --soft HEAD~1
+  106  git status
+  107  git log
+  108  git commit -m "Second Commit"
+  109  git log
+  110  git reset --hard HEAD~1
+  111  git status
+  112  nano company_data
+  113  git status
+  114  git show
+  115  git push -u origin master
+  116  git push -u origin company_data
+  117  git push -u college
+  118  git push -u origin college
+  119  git show
+  120  git checkout -B master
+  121  git push origin college
+  122  git show
+  123  git log
+  124  ls
+  125  nano company
+  126  git add .
+  127  git status
+  128  git restore --staged company
+  129  git status
+  130  git diff
+  131  git branch -D
+  132  git branch -D company_data
+  133  git branch -d college
+  134  git branch
+  135  git pull git@github.com:RohanDhalpe/Josh_git.git
+  136  git branch
+  137  git fetch
+  138  git branch
+  139  git checkout -B company_data
+  140  git branch
+  141  nano company_Data
+  142  git checkout -B college
+  143  git branch
+  144  git show
+  145  git status
+  146  git add .
+  147  git commit -m "Second Commit"
+  148  git log
+  149  git checkout -B master
+  150  git add .
+  151  git commit -m "another commit"
+  152  git status
+  153  git show
+  154  git push -u origin master
+  155  git show
+  156  git push --all origin master
+  157  git push origin college
+  158  git show
+  160  history
