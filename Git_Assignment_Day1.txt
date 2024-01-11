@@ -1,0 +1,933 @@
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit
+$ git init
+Initialized empty Git repository in C:/Users/rohan gajanan dhalpe/Desktop/JoshGit/.git/
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit (master)
+$ ls -a
+./  ../  .git/
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit (master)
+$ mkdir company
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit (master)
+$ cd company
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ nano company
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ cat company.txt
+cat: company.txt: No such file or directory
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ cat company
+Name: Rohan Dhalpe
+Company Name:Josh Software
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git add .
+warning: in the working copy of 'company/company', LF will be replaced by CRLF the next time Git touches it
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git commit -m "company commit"
+[master (root-commit) 016b700] company commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 company/company
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git checkout -b "company data"
+fatal: 'company data' is not a valid branch name
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git checkout -b "company_data"
+Switched to a new branch 'company_data'
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ mkdir interns
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ nano interns
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git status
+On branch company_data
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        company_data
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ cat company_data
+1) Name : Rohan Dhalpe
+   College : DY Patil college
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git checkout -b "college"
+Switched to a new branch 'college'
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ mkdir college_data
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ nano college_data
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ touch college_data
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ nano college_data
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git commit -m "second commit"
+On branch college
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        company_data
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git status
+On branch college
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        company_data
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git add .
+warning: in the working copy of 'company/company_data', LF will be replaced by CRLF the next time Git touches it
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git status
+On branch college
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   company_data
+
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git branch
+* college
+  company_data
+  master
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git stash
+Saved working directory and index state WIP on college: 016b700 company commit
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git log
+commit 016b7007d4520edc53f3f65c28173fcad2da4e37 (HEAD -> college, master, company_data)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 12:31:18 2024 +0530
+
+    company commit
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git stash list
+stash@{0}: WIP on college: 016b700 company commit
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git status
+On branch college
+nothing to commit, working tree clean
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git checkout -B master
+Switched to and reset branch 'master'
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git log
+commit 016b7007d4520edc53f3f65c28173fcad2da4e37 (HEAD -> master, company_data, college)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 12:31:18 2024 +0530
+
+    company commit
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git stash list
+stash@{0}: WIP on college: 016b700 company commit
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git stash pop
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   company_data
+
+Dropped refs/stash@{0} (1fe4366811bb9f55da7f3becb51c5394c3f039a8)
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   company_data
+
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git stash company_data
+fatal: subcommand wasn't specified; 'push' can't be assumed due to unexpected token 'company_data'
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git branch
+  college
+  company_data
+* master
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git checkout -b college
+fatal: a branch named 'college' already exists
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git checkout -B college
+Switched to and reset branch 'college'
+A       company/company_data
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git branch
+* college
+  company_data
+  master
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git stash
+Saved working directory and index state WIP on college: 016b700 company commit
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git stash list
+stash@{0}: WIP on college: 016b700 company commit
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git checkout -B company_data
+Switched to and reset branch 'company_data'
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git branch
+  college
+* company_data
+  master
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git status
+On branch company_data
+nothing to commit, working tree clean
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git pop
+git: 'pop' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git stash pop
+On branch company_data
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   company_data
+
+Dropped refs/stash@{0} (00fcafa5a23206ec3cd9b92388789dfecf89eb3c)
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git status
+On branch company_data
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   company_data
+
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git commit "new commit"
+error: pathspec 'new commit' did not match any file(s) known to git
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git commit -m "new commit"
+[company_data 76772ea] new commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 company/company_data
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git status
+On branch company_data
+nothing to commit, working tree clean
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git log
+commit 76772ea7b9a9e346b2c8f4a675593844ca06908c (HEAD -> company_data)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 14:20:36 2024 +0530
+
+    new commit
+
+commit 016b7007d4520edc53f3f65c28173fcad2da4e37 (master, college)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 12:31:18 2024 +0530
+
+    company commit
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git checkout -B master
+Switched to and reset branch 'master'
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git log
+commit 76772ea7b9a9e346b2c8f4a675593844ca06908c (HEAD -> master, company_data)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 14:20:36 2024 +0530
+
+    new commit
+
+commit 016b7007d4520edc53f3f65c28173fcad2da4e37 (college)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 12:31:18 2024 +0530
+
+    company commit
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=rohandhalpe11@gmail.com
+user.name=Rohan Dhalpe
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+core.autocrlf=true
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git remote add origin git@github.com:RohanDhalpe/Josh_git.git
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git push origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (8/8), 632 bytes | 158.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:RohanDhalpe/Josh_git.git
+ * [new branch]      master -> master
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git show
+commit 76772ea7b9a9e346b2c8f4a675593844ca06908c (HEAD -> master, origin/master, company_data)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 14:20:36 2024 +0530
+
+    new commit
+
+diff --git a/company/company_data b/company/company_data
+new file mode 100644
+index 0000000..853fd24
+--- /dev/null
++++ b/company/company_data
+@@ -0,0 +1,2 @@
++1) Name : Rohan Dhalpe
++   College : DY Patil college
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git push origin company
+error: src refspec company does not match any
+error: failed to push some refs to 'github.com:RohanDhalpe/Josh_git.git'
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git branch
+  college
+  company_data
+* master
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git push origin company_data
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'company_data' on GitHub by visiting:
+remote:      https://github.com/RohanDhalpe/Josh_git/pull/new/company_data
+remote:
+To github.com:RohanDhalpe/Josh_git.git
+ * [new branch]      company_data -> company_data
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git push origin college
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'college' on GitHub by visiting:
+remote:      https://github.com/RohanDhalpe/Josh_git/pull/new/college
+remote:
+To github.com:RohanDhalpe/Josh_git.git
+ * [new branch]      college -> college
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git show
+commit 76772ea7b9a9e346b2c8f4a675593844ca06908c (HEAD -> master, origin/master, origin/company_data, company_data)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 14:20:36 2024 +0530
+
+    new commit
+
+diff --git a/company/company_data b/company/company_data
+new file mode 100644
+index 0000000..853fd24
+--- /dev/null
++++ b/company/company_data
+@@ -0,0 +1,2 @@
++1) Name : Rohan Dhalpe
++   College : DY Patil college
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git merge
+fatal: No remote for the current branch.
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git merge origin
+merge: origin - not something we can merge
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git merge master
+Already up to date.
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git show
+commit 76772ea7b9a9e346b2c8f4a675593844ca06908c (HEAD -> master, origin/master, origin/company_data, company_data)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 14:20:36 2024 +0530
+
+    new commit
+
+diff --git a/company/company_data b/company/company_data
+new file mode 100644
+index 0000000..853fd24
+--- /dev/null
++++ b/company/company_data
+@@ -0,0 +1,2 @@
++1) Name : Rohan Dhalpe
++   College : DY Patil college
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git add .
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git commit -m "another commit"
+On branch master
+nothing to commit, working tree clean
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ clr
+bash: clr: command not found
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git checkout -B company_data
+Switched to and reset branch 'company_data'
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ nano company_data
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git status
+On branch company_data
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   company_data
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git add .
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git commit -m "Second Commit"
+[company_data 16bf321] Second Commit
+ 1 file changed, 1 insertion(+)
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git reset --soft HEAD~1
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git status
+On branch company_data
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   company_data
+
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git log
+commit 76772ea7b9a9e346b2c8f4a675593844ca06908c (HEAD -> company_data, origin/master, origin/company_data, master)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 14:20:36 2024 +0530
+
+    new commit
+
+commit 016b7007d4520edc53f3f65c28173fcad2da4e37 (origin/college, college)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 12:31:18 2024 +0530
+
+    company commit
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git commit -m "Second Commit"
+[company_data 9b6fd7a] Second Commit
+ 1 file changed, 1 insertion(+)
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git log
+commit 9b6fd7a2f4ea616d83026e2715f2ba6a18544c20 (HEAD -> company_data)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 14:56:27 2024 +0530
+
+    Second Commit
+
+commit 76772ea7b9a9e346b2c8f4a675593844ca06908c (origin/master, origin/company_data, master)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 14:20:36 2024 +0530
+
+    new commit
+
+commit 016b7007d4520edc53f3f65c28173fcad2da4e37 (origin/college, college)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 12:31:18 2024 +0530
+
+    company commit
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git reset --hard HEAD~1
+HEAD is now at 76772ea new commit
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git status
+On branch company_data
+nothing to commit, working tree clean
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ nano company_data
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git status
+On branch company_data
+nothing to commit, working tree clean
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git show
+commit 76772ea7b9a9e346b2c8f4a675593844ca06908c (HEAD -> company_data, origin/master, origin/company_data, master)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 14:20:36 2024 +0530
+
+    new commit
+
+diff --git a/company/company_data b/company/company_data
+new file mode 100644
+index 0000000..853fd24
+--- /dev/null
++++ b/company/company_data
+@@ -0,0 +1,2 @@
++1) Name : Rohan Dhalpe
++   College : DY Patil college
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git push -u origin company_data
+Everything up-to-date
+branch 'company_data' set up to track 'origin/company_data'.
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git push -u college
+fatal: 'college' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git push -u origin college
+Everything up-to-date
+branch 'college' set up to track 'origin/college'.
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git show
+commit 76772ea7b9a9e346b2c8f4a675593844ca06908c (HEAD -> company_data, origin/master, origin/company_data, master)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 14:20:36 2024 +0530
+
+    new commit
+
+diff --git a/company/company_data b/company/company_data
+new file mode 100644
+index 0000000..853fd24
+--- /dev/null
++++ b/company/company_data
+@@ -0,0 +1,2 @@
++1) Name : Rohan Dhalpe
++   College : DY Patil college
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git checkout -B master
+Switched to and reset branch 'master'
+Your branch is up to date with 'origin/master'.
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git push origin college
+Everything up-to-date
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git show
+commit 76772ea7b9a9e346b2c8f4a675593844ca06908c (HEAD -> master, origin/master, origin/company_data, company_data)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 14:20:36 2024 +0530
+
+    new commit
+
+diff --git a/company/company_data b/company/company_data
+new file mode 100644
+index 0000000..853fd24
+--- /dev/null
++++ b/company/company_data
+@@ -0,0 +1,2 @@
++1) Name : Rohan Dhalpe
++   College : DY Patil college
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git log
+commit 76772ea7b9a9e346b2c8f4a675593844ca06908c (HEAD -> master, origin/master, origin/company_data, company_data)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 14:20:36 2024 +0530
+
+    new commit
+
+commit 016b7007d4520edc53f3f65c28173fcad2da4e37 (origin/college, college)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 12:31:18 2024 +0530
+
+    company commit
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ ls
+college_data/  company  company_data  interns/
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ nano company
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git add .
+warning: in the working copy of 'company/company', LF will be replaced by CRLF the next time Git touches it
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   company
+
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git restore --staged company
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   company
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git diff
+warning: in the working copy of 'company/company', LF will be replaced by CRLF the next time Git touches it
+diff --git a/company/company b/company/company
+index 7eeff1f..d6fa33c 100644
+--- a/company/company
++++ b/company/company
+@@ -1,2 +1,3 @@
+ Name: Rohan Dhalpe
+ Company Name:Josh Software
++Stream : Computer Science
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git branch -D
+fatal: branch name required
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git branch -D company_data
+Deleted branch company_data (was 76772ea).
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git branch -d college
+Deleted branch college (was 016b700).
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git branch
+* master
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git pull git@github.com:RohanDhalpe/Josh_git.git
+From github.com:RohanDhalpe/Josh_git
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git branch
+* master
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git fetch
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git branch
+* master
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git checkout -B company_data
+Switched to a new branch 'company_data'
+M       company/company
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git branch
+* company_data
+  master
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ nano company_Data
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (company_data)
+$ git checkout -B college
+Switched to a new branch 'college'
+M       company/company
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git branch
+* college
+  company_data
+  master
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git show
+commit 76772ea7b9a9e346b2c8f4a675593844ca06908c (HEAD -> college, origin/master, origin/company_data, master, company_data)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 14:20:36 2024 +0530
+
+    new commit
+
+diff --git a/company/company_data b/company/company_data
+new file mode 100644
+index 0000000..853fd24
+--- /dev/null
++++ b/company/company_data
+@@ -0,0 +1,2 @@
++1) Name : Rohan Dhalpe
++   College : DY Patil college
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git status
+On branch college
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   company
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git add .
+warning: in the working copy of 'company/company', LF will be replaced by CRLF the next time Git touches it
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git commit -m "Second Commit"
+[college db7dd50] Second Commit
+ 1 file changed, 1 insertion(+)
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git log
+commit db7dd50cb61549ba98d6bb0eadcc1a3bf1ed09f0 (HEAD -> college)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 15:18:28 2024 +0530
+
+    Second Commit
+
+commit 76772ea7b9a9e346b2c8f4a675593844ca06908c (origin/master, origin/company_data, master, company_data)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 14:20:36 2024 +0530
+
+    new commit
+
+commit 016b7007d4520edc53f3f65c28173fcad2da4e37 (origin/college)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 12:31:18 2024 +0530
+
+    company commit
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (college)
+$ git checkout -B master
+Switched to and reset branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git add .
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git commit -m "another commit"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git show
+commit db7dd50cb61549ba98d6bb0eadcc1a3bf1ed09f0 (HEAD -> master, college)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 15:18:28 2024 +0530
+
+    Second Commit
+
+diff --git a/company/company b/company/company
+index 7eeff1f..d6fa33c 100644
+--- a/company/company
++++ b/company/company
+@@ -1,2 +1,3 @@
+ Name: Rohan Dhalpe
+ Company Name:Josh Software
++Stream : Computer Science
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 386 bytes | 128.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:RohanDhalpe/Josh_git.git
+   76772ea..db7dd50  master -> master
+branch 'master' set up to track 'origin/master'.
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git show
+commit db7dd50cb61549ba98d6bb0eadcc1a3bf1ed09f0 (HEAD -> master, origin/master, college)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 15:18:28 2024 +0530
+
+    Second Commit
+
+diff --git a/company/company b/company/company
+index 7eeff1f..d6fa33c 100644
+--- a/company/company
++++ b/company/company
+@@ -1,2 +1,3 @@
+ Name: Rohan Dhalpe
+ Company Name:Josh Software
++Stream : Computer Science
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git push --all origin master
+fatal: --all can't be combined with refspecs
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git push origin college
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:RohanDhalpe/Josh_git.git
+   016b700..db7dd50  college -> college
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$ git show
+commit db7dd50cb61549ba98d6bb0eadcc1a3bf1ed09f0 (HEAD -> master, origin/master, origin/college, college)
+Author: Rohan Dhalpe <rohandhalpe11@gmail.com>
+Date:   Thu Jan 11 15:18:28 2024 +0530
+
+    Second Commit
+
+diff --git a/company/company b/company/company
+index 7eeff1f..d6fa33c 100644
+--- a/company/company
++++ b/company/company
+@@ -1,2 +1,3 @@
+ Name: Rohan Dhalpe
+ Company Name:Josh Software
++Stream : Computer Science
+
+rohan gajanan dhalpe@LAPTOP-C0ICT6CB MINGW64 ~/Desktop/JoshGit/company (master)
+$
+
+
